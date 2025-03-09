@@ -1,3 +1,6 @@
 *
-!*.hpp
-!.gitignore
+!*/
+!*.cpp
+!*.gitignore
+!*.h
+!LICENSE
