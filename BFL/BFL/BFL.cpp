@@ -6,5 +6,5 @@ using namespace BFL;
 
 int main()
 {
-	everythingInDirectoryRecursive("F:/ssss",false);
+	
 }
