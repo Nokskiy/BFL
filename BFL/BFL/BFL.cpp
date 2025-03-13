@@ -6,5 +6,5 @@ using namespace BFL;
 
 int main()
 {
-	
+	rem("F:/FlashIntegro/",true,true);
 }

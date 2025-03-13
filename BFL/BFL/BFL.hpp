@@ -11,7 +11,14 @@ namespace BFL
 
 	bool isFile(path filePath)
 	{
-		return filePath.string().back() != '/';
+		if (exists(filePath))
+		{
+			return filesystem::is_regular_file(filePath);
+		}
+		else
+		{
+			return filePath.string().back() != '/';
+		}
 	}
 
 	string fileName(path filePath)
@@ -107,6 +114,40 @@ namespace BFL
 		else
 		{
 			create_directory(connectPaths(dirPath, name));
+		}
+	}
+
+	void rem(path dirPath,bool printDelFile = false, bool throwError = true)
+	{
+		if (exists(dirPath))
+		{
+			if (isFile(dirPath))
+			{
+				filesystem::remove(dirPath);
+			}
+			else
+			{
+				vector<path> dirs;
+				for (const auto i : everythingInDirectoryRecursive(dirPath))
+				{
+					if (printDelFile)
+						cout << i << endl;
+					dirs.push_back(i);
+				}
+				reverse(dirs.begin(), dirs.end());
+				for (const auto i : dirs)
+				{
+					filesystem::remove(i);
+				}
+				if (printDelFile)
+					cout << dirPath << endl;
+				filesystem::remove(dirPath);
+			}
+		}
+		else
+		{
+			if(throwError)
+				throw "directory/file not exist";
 		}
 	}
 }
