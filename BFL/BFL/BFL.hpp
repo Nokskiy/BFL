@@ -150,4 +150,25 @@ namespace BFL
 				throw "directory/file not exist";
 		}
 	}
+	void ren(path dirPath, path name, bool throwError = true)
+	{
+		if (exists(dirPath))
+		{
+			string newName = dirPath.string();
+
+			for (int i = 0; i < fileName(dirPath).length(); i++)
+				newName.pop_back();
+			for (int i = 0; i < name.string().length(); i++)
+				newName.push_back(name.string()[i]);
+
+			rename(dirPath, newName);
+		}
+		else
+		{
+			if (throwError)
+			{
+				throw "directory/file not exist";
+			}
+		}
+	}
 }
