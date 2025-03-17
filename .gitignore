@@ -1,8 +1,9 @@
 *
 build/*
+build/
 !*/
-!*.cpp
+!src/BFL.cpp
 !*.gitignore
-!*.h
+!*.hpp
 !CMakeLists.txt
 !LICENSE
