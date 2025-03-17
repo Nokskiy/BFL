@@ -10,13 +10,16 @@
 #include <dirent.h>
 #include <cstring>
 #include <cstring>
-
 #endif
 using namespace std;
 using namespace std::filesystem;
 
 namespace BFL
 {
+	inline path normalPath(path filePath)
+	{
+		return filePath.make_preferred();
+	}
 	inline bool isFile(path filePath)
 	{
 		if (exists(filePath))
@@ -221,5 +224,9 @@ namespace BFL
 		closedir(dir);
 		return drives;
 		#endif
+	}
+	inline path curPath()
+	{
+		return current_path();
 	}
 }
