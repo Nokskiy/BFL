@@ -3,4 +3,5 @@
 !*.cpp
 !*.gitignore
 !*.h
+!CMakeLists.txt
 !LICENSE
