@@ -4,5 +4,5 @@ using namespace BFL;
 
 int main()
 {
-    cout << curPath();
+    system("pause");
 }

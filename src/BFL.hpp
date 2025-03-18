@@ -16,10 +16,16 @@ using namespace std::filesystem;
 
 namespace BFL
 {
+	inline string pathToString(path filePath)
+	{
+		return filePath.string();
+	}
+
 	inline path normalPath(path filePath)
 	{
 		return filePath.make_preferred();
 	}
+
 	inline bool isFile(path filePath)
 	{
 		if (exists(filePath))
@@ -228,5 +234,36 @@ namespace BFL
 	inline path curPath()
 	{
 		return current_path();
+	}
+
+	inline void clearFile(path filePath)
+	{
+		ofstream op;
+		op.open(filePath);
+		op.close();
+	}
+
+	inline void writeToFile(path filePath,string text,bool nLine = true)
+	{
+		ofstream op;
+		op.open(filePath,ofstream::app);
+		if(nLine)
+			op << string("\n" + text);
+		else
+			op << text;
+		op.close();
+	}
+
+	inline string readFile(path filePath)
+	{
+		ifstream fout;
+		fout.open(filePath,ofstream::binary);
+		char ch;
+		string result;
+		while(fout.get(ch))
+		{
+			result.push_back(ch);
+		}
+		return result;
 	}
 }
