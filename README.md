@@ -25,13 +25,13 @@ The library utilizes the C++17 language standard.
 # How to use
 <details>
   <summary>Instruction</summary>
-- ** Install the desired release (preferably the latest one).  
+- **Install the desired release (preferably the latest one).  
 
-- ** Drag the `.hpp` file into your project directory.  
+- **Drag the `.hpp` file into your project directory.  
 
-- ** Where you need to use the library, add `#include "BFL.hpp"` at the beginning.  
+- **Where you need to use the library, add `#include "BFL.hpp"` at the beginning.  
 
-- ** It is recommended to add `using namespace BFL;` at the beginning.  
+- **It is recommended to add `using namespace BFL;` at the beginning.  
 
 You're all set!  
 </details>
