@@ -167,6 +167,7 @@ namespace BFL
 				throw "directory/file not exist";
 		}
 	}
+	
 	inline void ren(path dirPath, path name, bool throwError = true)
 	{
 		if (exists(dirPath))
@@ -188,6 +189,7 @@ namespace BFL
 			}
 		}
 	}
+
 	inline auto GetDrives()
 	{
 		#ifdef _WIN32
@@ -231,6 +233,7 @@ namespace BFL
 		return drives;
 		#endif
 	}
+
 	inline path curPath()
 	{
 		return current_path();
