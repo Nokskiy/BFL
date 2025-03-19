@@ -2,6 +2,7 @@
 build/*
 build/
 !*/
+!logo.jpg
 *.cpp
 !src/BFL.cpp
 !*.gitignore
