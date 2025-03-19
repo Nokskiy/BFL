@@ -39,14 +39,24 @@ You're all set!
 # Issues
 If you find any bugs, want to contribute by adding new features, or optimize something, feel free to open an issue.
 
-# Contributing
-I would be delighted if you would like to contribute to the development of the library and submit your changes.
 
 # Dockumetation
 - `pathToString(end path)` - returns the path converted to a string.
 - `normalPath(end path)` - returns the normalized path.
 - `isFile(file/directory path)` - returns true or false depending on whether the destination path is a file.
 - `fileName(end path)` - returns name of end path.
-- `connectPaths(path1,path2)` - returns connected paths.
-- `everythingInDirectory(directory,throw error = true/false)` - returns everything in a directory.
-- `everythingInDirectoryRecursive(directory,throw error = true/false)` - returns all files and folders in a directory along with the contents of those folders.
+- `connectPaths(path1, path2)` - returns connected paths.
+- `everythingInDirectory(directory ,throw error = true/false)` - returns everything in a directory.
+- `everythingInDirectoryRecursive(directory, throw error = true/false)` - returns all files and folders in a directory along with the contents of those folders.
+- `itemSize(path, throw error = true/false)` - returns a directory/file size.
+- `create(path,file/directory name)` - create a file/directory.
+- `rem(path, printDelFile = false/true, throwError = true/false)` - remove a file/directory.
+- `ren(file/directory path, new name, throwError = true/false)` - rename a file/directory.
+- `GetDrives()` - returns a disks list.
+- `curPath()` - returns a path to performing file.
+- `clearFile(file path)` - clear a file.
+- `writeToFile(filePath, text, nLine = true/false)` - write text to a file.
+- `readFile(file path)` - read a text of file.
+
+# Contributing
+I would be delighted if you would like to contribute to the development of the library and submit your changes.
