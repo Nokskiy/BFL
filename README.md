@@ -39,6 +39,14 @@ You're all set!
 # Issues
 If you find any bugs, want to contribute by adding new features, or optimize something, feel free to open an issue.
 
-
 # Contributing
 I would be delighted if you would like to contribute to the development of the library and submit your changes.
+
+# Dockumetation
+- `pathToString(end path)` - returns the path converted to a string.
+- `normalPath(end path)` - returns the normalized path.
+- `isFile(file/directory path)` - returns true or false depending on whether the destination path is a file.
+- `fileName(end path)` - returns name of end path.
+- `connectPaths(path1,path2)` - returns connected paths.
+- `everythingInDirectory(directory,throw error = true/false)` - returns everything in a directory.
+- `everythingInDirectoryRecursive(directory,throw error = true/false)` - returns all files and folders in a directory along with the contents of those folders.
