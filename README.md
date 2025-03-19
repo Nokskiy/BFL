@@ -36,5 +36,9 @@ The library utilizes the C++17 language standard.
 You're all set!  
 </details>
 
+# Issues
+If you find any bugs, want to contribute by adding new features, or optimize something, feel free to open an issue.
+
+
 # Contributing
 I would be delighted if you would like to contribute to the development of the library and submit your changes.
