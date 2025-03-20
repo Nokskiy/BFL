@@ -50,6 +50,6 @@ If you find any bugs, want to contribute by adding new features, or optimize som
 - `clearFile(file path)` - clear a file.
 - `writeToFile(filePath, text, nLine = true/false)` - write text to a file.
 - `readFile(file path)` - read a text of file.
-
+- `find(root path,target)` - returns a full path.
 # Contributing
 I would be delighted if you would like to contribute to the development of the library and submit your changes.
