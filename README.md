@@ -1,4 +1,4 @@
-# BFL
+# BFL : Basic file library
 
 ![BFL](https://github.com/Nokskiy/BFL/blob/main/logo.jpg)
 
@@ -8,11 +8,11 @@
 #### Short description
 __BFL__ is a library designed to simplify file system operations in C++. It provides a comprehensive set of functions for handling various file system tasks.📁📁📁
 
-  - The library offers functions for filesystem manipulation using C++'s file system capabilities.** 📁📁📁  
+  - The library offers functions for filesystem manipulation using C++'s file system capabilities. 📁📁📁  
 
-  - Functions are in the BFL namespace.** 🌌🌌🌌  
+  - Functions are in the BFL namespace. 🌌🌌🌌  
 
-  - Thanks to the straightforward use of the standard file system and the code being modularized into multiple functions, we maintain optimal performance.** 🚀🚀🚀  
+  - Thanks to the straightforward use of the standard file system and the code being modularized into multiple functions, we maintain optimal performance. 🚀🚀🚀  
 
 
 #### About language
